@@ -4,7 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Queue<Integer> queue = new LinkedList<>();
+        Queue<Integer> queue = new ArrayDeque<>();
+
         int waitDoorsInSeconds = 10;
         int waitMoveInSeconds = 5;
         int totalSeconds = 0;
@@ -12,7 +13,7 @@ public class Main {
         int previousFloor = -1;
 
         Scanner scanner = new Scanner(System.in);
-        int levelInput = 0;
+        int levelInput;
         while (true) {
 
             System.out.println("Ожидаю ввода этажа: (для завершения введите 0)");
